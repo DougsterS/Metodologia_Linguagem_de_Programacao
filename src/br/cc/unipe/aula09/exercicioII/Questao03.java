@@ -34,15 +34,35 @@ public class Questao03 {
 			meuArray[aux] = valor;
 			aux++;
 		}
+		/**
+		 * Recebe os 10 valores e os posiciona 
+		 * em posições diferentes do Array
+		 * 
+		 */
 		
-		aux = 0;
 		valor = 0;
 		contador = 0;
-		while(aux == 0) {
-			System.out.println(" ");
-			System.out.println(" ");
+		while(contador == 0) {
 			System.out.println("Digite um valor para procurar dentro do Array: ");
 			valor = leitor.nextInt();
+			
+			for(aux = 0; aux < 10 ; aux++){
+				if(meuArray[aux] == valor){
+					System.out.println("O valor " + valor + " está presente na lista, na posição: " + aux);
+				}
+			}
+			/**
+			 * 
+			 * Usuário procura um valor específico dentro do Array
+			 * 
+			 */
+			
+			System.out.println("Deseja procurar mais um valor na lista?");
+			System.out.println("0 - Sim");
+			System.out.println("1 - Não");
+			contador = leitor.nextInt();
 		}
+		
+		System.out.println("Obrigado por utilizar nosso programa!");
 	}
 }
