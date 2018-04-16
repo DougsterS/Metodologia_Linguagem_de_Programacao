@@ -1,6 +1,5 @@
 package br.cc.unipe.aula09.exercicioII;
 
-import java.util.Arrays;
 import java.util.Scanner;
 /**
  * 
